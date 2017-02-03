@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="hiLoGame.js"></script>
+    <meta charset="utf-8">
+    <title>Hi/Lo Game</title>
+  </head>
+  <body>
+    <h1>The Hi/Lo Game</h1>
+    <p>Hello! Welcome to the Hi-Lo Game. The game randomly generates a number between 1 and 100. You get seven attempts to guess the number. If you get it, you win. If you don't, you die.</p>
+    <p>Please enter your guess in the text box below.</p>
+    <input type="text" id="guess" placeholder="Enter a number" onkeypress="enter(event)"/>
+    <input type="button" value="Submit Guess" onclick="hiLo()"/>
+    <h2 id="prompt"></h2>
+  </body>
+</html>

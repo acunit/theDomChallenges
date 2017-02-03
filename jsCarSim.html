@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="jsCarSim.js"></script>
+    <meta charset="utf-8">
+    <title>Javascript Car Simulator</title>
+  </head>
+  <body>
+    <h1>Javascript Car Simulator</h1>
+    <input type="text" id="make" placeholder="Car Make">
+    <br>
+    <input type="text" id="model" placeholder="Car Model">
+    <br>
+    <input type="text" id="year" placeholder="Car Year" onkeypress="enter(event)">
+    <br>
+    <input type="button" value="makeCar" onclick="createCar()"/>
+    <input type="button" value="Check Speed" onclick="car.getSpeed()"/>
+    <h2 id="carSpec"></h2>
+
+    <h3>Your Car's Top Speed: <a id="topSpeed"></a></h3>
+
+    <h3>You Car's Current Speed: <a id="currentSpeed"></a></h3>
+    <input type="button" value="brake" onclick="car.brake()"/>
+    <input type="button" value="accelerate" onclick="car.accelerate()"/>
+  </body>
+</html>
